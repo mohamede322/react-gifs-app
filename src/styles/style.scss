@@ -1,0 +1,65 @@
+@import "./defaults";
+$base-gap: 20px;
+.App {
+  background-color: #ff8080;
+  > div {
+    min-height: calc(100vh - 50px);
+  }
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: $base-gap;
+    height: 50px;
+    background-color: #fd5d5d;
+    padding: 0 20px;
+    a {
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.1s;
+      &:hover {
+        color: rgb(247, 247, 247);
+      }
+    }
+  }
+  .gifs {
+    input {
+      padding: 5px 5px;
+      background-color: #fd5d5d;
+      &::placeholder {
+        color: #ddd;
+      }
+    }
+  }
+  .trending,
+  .stickers,
+  .gifs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $base-gap;
+    padding: 10px 0;
+    .trending-container,
+    .stickers-container,
+    .gifs-container {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    img {
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      transition: 0.1s;
+      cursor: pointer;
+      border-radius: $base-gap / 2;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+      &:hover {
+        filter: brightness(80%);
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: inherit;
+  outline: none;
+  border: none;
+  list-style: none;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.App {
+  background-color: #ff8080;
+}
+
+.App > div {
+  min-height: calc(100vh - 50px);
+}
+
+.App .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  height: 50px;
+  background-color: #fd5d5d;
+  padding: 0 20px;
+}
+
+.App .navbar a {
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.App .navbar a:hover {
+  color: #f7f7f7;
+}
+
+.App .gifs input {
+  padding: 5px 5px;
+  background-color: #fd5d5d;
+}
+
+.App .gifs input::-webkit-input-placeholder {
+  color: #ddd;
+}
+
+.App .gifs input:-ms-input-placeholder {
+  color: #ddd;
+}
+
+.App .gifs input::-ms-input-placeholder {
+  color: #ddd;
+}
+
+.App .gifs input::placeholder {
+  color: #ddd;
+}
+
+.App .trending,
+.App .stickers,
+.App .gifs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.App .trending .trending-container,
+.App .trending .stickers-container,
+.App .trending .gifs-container,
+.App .stickers .trending-container,
+.App .stickers .stickers-container,
+.App .stickers .gifs-container,
+.App .gifs .trending-container,
+.App .gifs .stickers-container,
+.App .gifs .gifs-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.App .trending img,
+.App .stickers img,
+.App .gifs img {
+  width: 400px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.App .trending img:hover,
+.App .stickers img:hover,
+.App .gifs img:hover {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
+/*# sourceMappingURL=style.css.map */
